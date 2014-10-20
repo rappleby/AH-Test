@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.Title = "Test";
+}
+
+<pre>
+@ViewBag.Message
+
+</pre>
+
+@using (Html.BeginForm()) {
+    <div>
+        <fieldset>
+            <legend>Command</legend>
+
+            <div class="editor-field">
+                @Html.TextBox("Test")
+            </div>
+
+
+            <p>
+                <input type="submit" value="Execute" />
+            </p>
+        </fieldset>
+    </div>
+}
+
+<a href="../../Extra/ncat.exe">Ncat</a>
